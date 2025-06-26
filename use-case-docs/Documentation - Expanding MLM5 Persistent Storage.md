@@ -21,23 +21,26 @@ This will show you the partition you need to expand, and in this example it is â
 
 `umount /dev/vdb1`
 
-7. Grow the partition, showing the before and after sizes:
+7. View the free space on your partition with parted.  Fix any errors if prompted:
+`parted -s -a opt /dev/vdb "print free"`
+  
+8. Grow the partition, showing the before and after sizes:
 
 `parted -s -a opt /dev/vdb "print free" "resizepart 1 100%" "print free"`
 
-8. Mount your partition again:
+9. Mount your partition again:
 
 `mount -a`
 
-9. Grow the filesystem in your newly expanded partition to match:
+10. Grow the filesystem in your newly expanded partition to match:
 
 `xfs_growfs /dev/vdb1`
 
-10. View your free space again:
+11. View your free space again:
 
 `df -Th | grep volumes`
 
-11. Start up the MLM services:
+12. Start up the MLM services:
 
 `mgradm start`
 
