@@ -11,3 +11,8 @@ Here is an example of running this script from the client with variables specifi
 ```
 export ACTIVATION_KEY=1-SLES15SP6 && export HOSTNAME=your.proxy.fqdn && sh ./bootstrap-with-variables.sh
 ```
+
+Here is an example of integrating it with curl, so the script does not need to be locally stored:
+```
+export ACTIVATION_KEY=1-SLES15SP6 && export HOSTNAME=your.proxy.fqdn && curl -Sks http://your.proxy.fqdn/pub/bootstrap/bootstrap.sh | /bin/bash -s -- "$ACTIVATION_KEY" "$HOSTNAME"
+```
