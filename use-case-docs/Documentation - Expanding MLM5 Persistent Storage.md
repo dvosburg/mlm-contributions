@@ -6,7 +6,7 @@
 
 2. Expand the size of the virtual disk with your hypervisor tools
 
-3. Power on the container host
+3. Power on the container host, and log in via SSH.
 
 4. View available disk space
 
