@@ -13,11 +13,11 @@ On new Host (SLES15SP6) registered to SCC, adding the SUSE Manager Server 5.0 Ex
 
 ```export OLD\_HOST="old.host.fqdn"```
 
-```zypper install podman netavark mgradm mgradm-bash-completion \\  
-mgrctl mgrctl-bash-completion suse-manager-5.0-x86\_64-server-image \\  
+```zypper install podman netavark mgradm mgradm-bash-completion \ 
+mgrctl mgrctl-bash-completion suse-manager-5.0-x86\_64-server-image \  
 uyuni-storage-setup-server```
 
-```mkdir \-p /var/lib/containers/storage/volumes
+```mkdir \-p /var/lib/containers/storage/volumes```
 
 Ensure persistent storage is mapped and mounted, for example:  
 mgr-storage-server /dev/sdb
