@@ -18,9 +18,9 @@ On new Host (SLES15SP6) registered to SCC, adding the SUSE Manager Server 5.0 Ex
 ```mkdir \-p /var/lib/containers/storage/volumes```
 
 Ensure persistent storage is mapped and mounted, for example:  
-mgr-storage-server /dev/sdb
+```mgr-storage-server /dev/sdb```
 
-rsync \-avz $OLD\_HOST:/etc/containers/ /etc/containers/
+```rsync \-avz $OLD\_HOST:/etc/containers/ /etc/containers/```
 
 rsync \-avz $OLD\_HOST:/var/lib/containers/storage/volumes/ \\  
 /var/lib/containers/storage/volumes/
