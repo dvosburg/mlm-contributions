@@ -51,6 +51,10 @@ Uninstall with mgradm - keeping the data volumes, deleting the copied installati
 ```
 mgradm uninstall --force
 ```
+You may get one or more of the following (cosmetic) warnings: 
+```WRN failed to get uyuni-hub-xmlrpc systemd service definition error="exit status 1"```
+```WRN /etc/systemd/system/uyuni-server.service.d folder contains file created by the user. Please remove them when uninstallation is completed.```
+```WRN Data have been kept, use podman volume commands to clear the volumes```
 
 Shutdown the SLE-Micro Host, and keep it as an emergency fallback.
 
@@ -63,9 +67,10 @@ Install MLM properly on the new host, supplying the original SSL password and ad
 mgradm install podman
 ```
 
-You may get the following (cosmetic) warnings:  
+You may get one or more of the following (cosmetic) warnings:  
 ```WRN Server appears to be already configured. Installation will continue, but installation options may be ignored.```  
 ```WRN Administration user already exists, but organization Organization could not be found```
+
 
 Check that everything is running:   
 ```
