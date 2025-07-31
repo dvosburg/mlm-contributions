@@ -18,7 +18,7 @@ mgradm stop
 On new Host (SLES15SP6) registered to SCC, adding the SUSE Manager Server 5.0 Extension and fully updated:
 
 ```
-export OLD\_HOST="old.host.fqdn"
+export OLD_HOST="old.host.fqdn"
 ```
 
 ```
@@ -35,18 +35,18 @@ mgr-storage-server /dev/sdb
 ```
 
 ```
-rsync \-avz $OLD\_HOST:/etc/containers/ /etc/containers/
+rsync -avz $OLD_HOST:/etc/containers/ /etc/containers/
 ```
 
 ```
-rsync \-avz $OLD\_HOST:/var/lib/containers/storage/volumes/ /var/lib/containers/storage/volumes/
+rsync -avz $OLD_HOST:/var/lib/containers/storage/volumes/ /var/lib/containers/storage/volumes/
 ```
 
 ```
-rsync \-avz $OLD\_HOST:/etc/systemd/system/uyuni-\* /etc/systemd/system/
+rsync -avz $OLD_HOST:/etc/systemd/system/uyuni-* /etc/systemd/system/
 ``` 
 ```
-rsync \-avz $OLD\_HOST:/etc/ssh/ssh\_host\_\* /etc/ssh/
+rsync -avz $OLD_HOST:/etc/ssh/ssh\_host\_* /etc/ssh/
 ```
 
 Keeps the data volumes, deletes the installation bits before proper installation  
