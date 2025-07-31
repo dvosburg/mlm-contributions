@@ -27,16 +27,16 @@ Ensure persistent storage is mapped and mounted, for example:
 ```rsync \-avz $OLD\_HOST:/etc/systemd/system/uyuni-\* /etc/systemd/system/ ``` 
 ```rsync \-avz $OLD\_HOST:/etc/ssh/ssh\_host\_\* /etc/ssh/```
 
-\# Keeps the data volumes, deletes the installation bits before proper installation  
+Keeps the data volumes, deletes the installation bits before proper installation  
 ```mgradm uninstall –force```
 
-\# Shutdown the SLE-Micro Host, and keep it as an emergency fallback.
+Shutdown the SLE-Micro Host, and keep it as an emergency fallback.
 
 Return to the new (SLES15SP6) Host:  
-\# Change IP of new Host to the original (SLE Micro) IP  
-\# Change Hostname of new host to the original (SLE Micro) Hostname
+ * Change IP of new Host to the original (SLE Micro) IP
+ * Change Hostname of new host to the original (SLE Micro) Hostname
 
-\# Install it properly, supplying the original SSL password and admin password  
+Install MLM properly on the new host, supplying the original SSL password and admin password  
 ```mgradm install podman ```
 
 You may get the following (cosmetic) warnings:  
