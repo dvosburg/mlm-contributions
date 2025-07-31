@@ -26,7 +26,7 @@ zypper install podman netavark mgradm mgradm-bash-completion mgrctl mgrctl-bash-
 ```
 
 ```
-mkdir \-p /var/lib/containers/storage/volumes
+mkdir -p /var/lib/containers/storage/volumes
 ```
 
 Ensure persistent storage is mapped and mounted, for example:  
