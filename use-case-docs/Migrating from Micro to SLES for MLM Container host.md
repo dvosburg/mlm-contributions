@@ -1,6 +1,6 @@
 ## Migrating from Micro to SLES for MLM 5.0 Container Host
 
-On SLE Micro SMLM 5.0 (old) Host \- ensure it is running the latest as root with:  
+On SLE Micro SMLM 5.0 (old) Host \- ensure it is running the latest (as root) with:  
 ```
 transactional-update
 ```  
