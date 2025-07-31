@@ -44,7 +44,7 @@ rsync -avz $OLD_HOST:/var/lib/containers/storage/volumes/ /var/lib/containers/st
 rsync -avz $OLD_HOST:/etc/systemd/system/uyuni-* /etc/systemd/system/
 ``` 
 ```
-rsync -avz $OLD_HOST:/etc/ssh/ssh\_host\_* /etc/ssh/
+rsync -avz $OLD_HOST:/etc/ssh/ssh_host_* /etc/ssh/
 ```
 
 Uninstall with mgradm - keeping the data volumes, deleting the copied installation bits before proper installation  
