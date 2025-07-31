@@ -54,7 +54,9 @@ mgradm uninstall --force
 You may get one or more of the following (cosmetic) warnings: 
 
 ```WRN failed to get uyuni-hub-xmlrpc systemd service definition error="exit status 1"```
+
 ```WRN /etc/systemd/system/uyuni-server.service.d folder contains file created by the user. Please remove them when uninstallation is completed.```
+
 ```WRN Data have been kept, use podman volume commands to clear the volumes```
 
 Shutdown the SLE-Micro Host, and keep it as an emergency fallback.
