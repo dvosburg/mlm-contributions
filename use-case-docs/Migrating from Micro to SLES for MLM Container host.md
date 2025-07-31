@@ -10,7 +10,7 @@ Update MLM containers to the latest:
 mgradm upgrade
 ```
 
-Stop uyuni-server.service on SLE-Micro:  
+Stop MLM services on SLE-Micro:  
 ```
 mgradm stop
 ```
