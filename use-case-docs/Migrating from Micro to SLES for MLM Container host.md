@@ -33,15 +33,13 @@ Ensure persistent storage is mapped and mounted, for example:
 ```
 mgr-storage-server /dev/sdb
 ```
-
+Copy the database and files from the old server:
 ```
 rsync -avz $OLD_HOST:/etc/containers/ /etc/containers/
 ```
-
 ```
 rsync -avz $OLD_HOST:/var/lib/containers/storage/volumes/ /var/lib/containers/storage/volumes/
 ```
-
 ```
 rsync -avz $OLD_HOST:/etc/systemd/system/uyuni-* /etc/systemd/system/
 ``` 
