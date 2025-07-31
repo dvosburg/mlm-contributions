@@ -40,8 +40,8 @@ Install MLM properly on the new host, supplying the original SSL password and ad
 ```mgradm install podman ```
 
 You may get the following (cosmetic) warnings:  
-```WRN Server appears to be already configured. Installation will continue, but installation options may be ignored.  
-WRN Administration user already exists, but organization Organization could not be found```
+```WRN Server appears to be already configured. Installation will continue, but installation options may be ignored.```  
+```WRN Administration user already exists, but organization Organization could not be found```
 
 Check that everything is running:   
 ```mgradm status```
