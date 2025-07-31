@@ -49,7 +49,7 @@ rsync -avz $OLD_HOST:/etc/ssh/ssh_host_* /etc/ssh/
 
 Uninstall with mgradm - keeping the data volumes, deleting the copied installation bits before proper installation  
 ```
-mgradm uninstall -–force
+mgradm uninstall --force
 ```
 
 Shutdown the SLE-Micro Host, and keep it as an emergency fallback.
