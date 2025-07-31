@@ -1,6 +1,6 @@
 ## Migrating from Micro to SLES for MLM 5.0 Container Host
 
-On SLE Micro SMLM 5.0 (old) Host \- ensure it is running the latest with:  
+On SLE Micro SMLM 5.0 (old) Host \- ensure it is running the latest as root with:  
 ```
 transactional-update
 ```  
@@ -15,7 +15,7 @@ Stop uyuni-server.service on SLE-Micro:
 mgradm stop
 ```
 
-On new Host (SLES15SP6) registered to SCC, adding the SUSE Manager Server 5.0 Extension and fully updated:
+On new Host (SLES15SP6) register to SCC, add the SUSE Manager Server 5.0 Extension and fully update. Run these commands as root:
 
 ```
 export OLD_HOST="old.host.fqdn"
