@@ -4,16 +4,24 @@ On SLE Micro SMLM 5.0 (old) Host \- ensure it is running the latest with:
 transactional-update  
 Then reboot the host.    
 Update MLM containers to the latest:  
-```mgradm upgrade```
+```
+mgradm upgrade
+```
 
 Stop uyuni-server.service on SLE-Micro:  
-```mgradm stop```
+```
+mgradm stop
+```
 
 On new Host (SLES15SP6) registered to SCC, adding the SUSE Manager Server 5.0 Extension and fully updated:
 
-```export OLD\_HOST="old.host.fqdn"```
+```
+export OLD\_HOST="old.host.fqdn"
+```
 
-```zypper install podman netavark mgradm mgradm-bash-completion mgrctl mgrctl-bash-completion suse-manager-5.0-x86_64-server-image uyuni-storage-setup-server```
+```
+zypper install podman netavark mgradm mgradm-bash-completion mgrctl mgrctl-bash-completion suse-manager-5.0-x86_64-server-image uyuni-storage-setup-server
+```
 
 ```mkdir \-p /var/lib/containers/storage/volumes```
 
