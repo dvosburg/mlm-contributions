@@ -22,14 +22,13 @@ Ensure persistent storage is mapped and mounted, for example:
 
 ```rsync \-avz $OLD\_HOST:/etc/containers/ /etc/containers/```
 
-rsync \-avz $OLD\_HOST:/var/lib/containers/storage/volumes/ \\  
-/var/lib/containers/storage/volumes/
+```rsync \-avz $OLD\_HOST:/var/lib/containers/storage/volumes/ /var/lib/containers/storage/volumes/ ```
 
-rsync \-avz $OLD\_HOST:/etc/systemd/system/uyuni-\* /etc/systemd/system/  
-rsync \-avz $OLD\_HOST:/etc/ssh/ssh\_host\_\* /etc/ssh/
+```rsync \-avz $OLD\_HOST:/etc/systemd/system/uyuni-\* /etc/systemd/system/ ``` 
+```rsync \-avz $OLD\_HOST:/etc/ssh/ssh\_host\_\* /etc/ssh/```
 
 \# Keeps the data volumes, deletes the installation bits before proper installation  
-mgradm uninstall –force
+```mgradm uninstall –force```
 
 \# Shutdown the SLE-Micro Host, and keep it as an emergency fallback.
 
@@ -38,13 +37,13 @@ Return to the new (SLES15SP6) Host:
 \# Change Hostname of new host to the original (SLE Micro) Hostname
 
 \# Install it properly, supplying the original SSL password and admin password  
-mgradm install podman 
+```mgradm install podman ```
 
 You may get the following (cosmetic) warnings:  
-WRN Server appears to be already configured. Installation will continue, but installation options may be ignored.  
-WRN Administration user already exists, but organization Organization could not be found
+```WRN Server appears to be already configured. Installation will continue, but installation options may be ignored.  
+WRN Administration user already exists, but organization Organization could not be found```
 
 Check that everything is running:   
-mgradm status
+```mgradm status```
 
 Credit to [Bo Jin](mailto:bjin@suse.com) for the bulk of these steps.
