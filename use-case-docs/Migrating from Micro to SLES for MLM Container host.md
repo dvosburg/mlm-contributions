@@ -49,7 +49,7 @@ rsync -avz $OLD_HOST:/etc/systemd/system/uyuni-* /etc/systemd/system/
 rsync -avz $OLD_HOST:/etc/ssh/ssh\_host\_* /etc/ssh/
 ```
 
-Keeps the data volumes, deletes the installation bits before proper installation  
+Uninstall keeping the data volumes, deleting the copied installation bits before proper installation  
 ```
 mgradm uninstall –force
 ```
