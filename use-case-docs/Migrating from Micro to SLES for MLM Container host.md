@@ -15,7 +15,7 @@ Stop MLM services on SLE-Micro:
 mgradm stop
 ```
 
-On new Host (SLES15SP6) register to SCC, add the SUSE Manager Server 5.0 Extension and fully update. Run these commands as root:
+On new Host (SLES15SP6) register to SCC, add the Containers Module and SUSE Manager Server 5.0 Extension, then fully update. Run these commands as root:
 
 ```
 export OLD_HOST="old.host.fqdn"
