@@ -13,14 +13,18 @@ copy_rebootmgr_conf_to_etc_if_not_there:
   file.copy:
     - name: /etc/rebootmgr.conf
     - source: /usr/etc/rebootmgr.conf
-allow_root_ssh_login:
-  file.managed:
+copy_sshd_config_if_not_there:
+  file.copy:
     - name: /etc/ssh/sshd_config
-    - user: root
-    - group: root
-    - mode: 640
-    - template: jinja
-    - source: salt://etc/ssh/sshd_config      
+    - source: /usr/etc/ssh/sshd_config
+allow_root_ssh_login:
+  file.keyvalue:
+    - name: /etc/ssh/sshd_config
+    - key_values:
+       PermitRootLogin: 'yes'
+    - separator: ' '
+    - uncomment: '#'
+    - append_if_not_found: True 
 {%- else %} 
 {%- endif %}
 
