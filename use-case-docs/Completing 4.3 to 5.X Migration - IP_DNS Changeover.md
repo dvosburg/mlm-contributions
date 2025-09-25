@@ -28,7 +28,7 @@ nmcli connection modify "Wired connection 1" \
   ipv4.gateway 172.17.20.1 \
   ipv4.dns 172.17.20.35,8.8.8.8
 ```
-Hostname change should be done two ways on the container host:
+Hostname change should be done two ways on the 5.X server container host:
 ```
 hostnamectl set-hostname <<original-FQDN>>
 ```
