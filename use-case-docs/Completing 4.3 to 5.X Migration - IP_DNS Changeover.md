@@ -19,8 +19,8 @@ Hostname change should be done two ways on the 4.3 server:
 ```
 hostnamectl set-hostname <<new-name-for-original-server.domain.com>>
 ```
-and by ensuring there is a line in '/etc/hosts' for the new IP, FQDN, and short name.  
-Keep a line there for the original IP/FQDN so if you need to start the now disabled services again they will work. 
+and by editing '/etc/hosts' , ensuring there is a line for the new IP, FQDN, and short name.  
+Keep a separate line there for the original IP/FQDN so if you need to start the now disabled services again they will work. 
 
 Reboot the oldserver (4.3) so it has the new IP in place.
 ```
