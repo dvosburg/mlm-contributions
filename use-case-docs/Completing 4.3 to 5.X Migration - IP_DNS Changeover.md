@@ -20,7 +20,7 @@ yast lan
 shutdown -r now
 ```
     
-6. Boot up the 5.X server.  Change the 5.X server IP and hostname to the original FQDN and IP.   If using NetworkManager, you can do this with nmcli.  Here is an example:
+5. Boot up the 5.X server.  Change the 5.X server IP and hostname to the original FQDN and IP.   If using NetworkManager, you can do this with nmcli.  Here is an example:
 ```
 nmcli connection modify "Wired connection 1" \
   ipv4.method manual \
