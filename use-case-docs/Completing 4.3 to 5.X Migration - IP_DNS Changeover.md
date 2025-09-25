@@ -1,4 +1,4 @@
-Changing the new MLM server to use the original IP/FQDN is the last step in migration.  It is best if you can re-use the IP address of the original server, and these instructions detail the steps to complete it
+Changing the new 5.X MLM server to use the original 4.3 IP/FQDN is the last step in migration.  It is best if you can re-use the IP address of the original server, and these instructions detail the steps to complete it
 
 1. Migrate the oldserver (4.3) to the new one, where the new one has a temporary IP/FQDN, following the steps in the documentation.  
 2. Validate all the services start on the new 5.X one
