@@ -2,8 +2,9 @@ Changing the new MLM server to use the original IP/FQDN is the last step in migr
 
 1. Migrate the oldserver (4.3) to the new one, where the new one has a temporary IP/FQDN, following the steps in the documentation.  
 2. Validate all the services start on the new one
- `mgradm status`
-3.  and test going to the webUI on the temporary IP.  
+   
+ ```mgradm status```
+  and test going to the webUI on the temporary IP.  
 5. Shut down the 5.X server
    `mgradm stop && shutdown \-h now`  
 6. Change the oldserver FQDN and IP address to something different \- for emergency access to anything missing.  Keep a line in '/etc/hosts' for the original IP/FQDN so if you need to start the services again they will work.  Reboot the 4.3 server so it has the new IP in place.   
