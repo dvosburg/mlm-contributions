@@ -45,4 +45,4 @@ and by adding a line to '/etc/hosts' for IP, FQDN, and short name.
 ```
 mgradm stop && shutdown -r now  
 ```
-7. Validate that client systems now are connecting to the new server \- test with some action scheduled from the 5.X server.
+7. Validate that client systems now are connecting to the new 5.X server \- test with some scheduled action.
