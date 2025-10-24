@@ -23,7 +23,7 @@ This will show you the partition you need to expand, and in this example it is â
 
 7. View the free space on your partition with parted.  Fix any errors if prompted:
 
-`parted -s -a opt /dev/vdb "print free"`
+`parted -a opt /dev/vdb "print free"`
   
 8. Grow the partition, showing the before and after sizes:
 
