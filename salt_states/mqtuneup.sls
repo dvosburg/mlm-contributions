@@ -5,5 +5,5 @@ copy_mqtuneup_config_file:
 
 Restart Salt Minion:
   cmd.run:
-    - name: 'venv-salt-call --local service.restart salt-minion'
+    - name: 'venv-salt-call --local service.restart venv-salt-minion'
     - bg: True
